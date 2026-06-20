@@ -45,7 +45,7 @@
                     <div class="hero-box">
                         <img src="./assets/images/hero.webp" alt="Hero Image" />
                         <h1>
-                            Hai!, Saya <span>Dzul</span> <br />
+                            Hai!, Saya <span id="element"></span> <br />
                             Web Developer & Gamer
                         </h1>
                     </div>
@@ -55,5 +55,19 @@
         </header>
         <!-- JavaScript -->
         <script src="./dist/js/script.js"></script>
+
+        <!-- Typed JS -->
+        <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+        <script>
+            var typed = new Typed("#element", {
+                strings: ["Dzul", "Sigma"],
+                typeSpeed: 350,
+                loop: true,
+                backSpeed: 100,
+                showCursor: false,
+                backDelay: 1000,
+            });
+        </script>
     </body>
 </html>
