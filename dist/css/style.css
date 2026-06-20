@@ -66,4 +66,85 @@
     font-weight: bold;
     color: #667392;
 }
+
+@media (max-width: 768px) {
+    .hero-box h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 475px) {
+    .hero-box h1 {
+        font-size: 40px;
+    }
+}
 /* Hero */
+
+header svg {
+    margin-bottom: -10px;
+}
+
+/* Tentang */
+.tentang {
+    background-color: #667392;
+    padding-block: 50px;
+    color: white;
+}
+
+.tentang .container > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.tentang-box .box:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 150px;
+    align-items: center;
+    gap: 50px;
+}
+
+.tentang-box .box.box:nth-child(1) img {
+    width: 300px;
+    padding: 10px 10px 0px 10px;
+    background-color: #7d89a4;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.tentang-box .box:nth-child(1) p {
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.tentang-box .box:nth-child(1) p span {
+    font-weight: bold;
+}
+
+.tentang-box .box:nth-child(1) a {
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.tentang-box .box:nth-child(1) a:hover {
+    background-color: white;
+    color: #667392;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .tentang-box .box:nth-child(1) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tentang-box .box.box:nth-child(1) {
+    text-align: center;
+}
+/* Tentang */
