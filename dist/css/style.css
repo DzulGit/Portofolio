@@ -191,3 +191,60 @@ header svg {
     text-align: center;
 }
 /* Tentang */
+
+/* Project */
+
+.project{
+    padding-block: 50px;
+}
+
+.project-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.project-box .box{
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.project-box .box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-box .project-desc{
+    margin-top: 20px;
+}
+
+.project-box .project-desc p {
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.project-box .project-desc .project-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-box .project-desc .project-btn a {
+    display: inline-block;
+    background-color: #667392;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box .project-desc .project-btn a:hover{
+    transform: scale(0.95);
+
+}
+/* Project */
