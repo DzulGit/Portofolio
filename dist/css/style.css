@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     gap: 45px;
+    margin-top: 12px;
 }
 
 .navbar-box .menu li {
@@ -53,6 +54,11 @@
 
 .hero-box img {
     width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-box img:hover {
+    transform: scale(1.05);
 }
 
 .hero-box h1 {
@@ -112,6 +118,11 @@ header svg {
     border: 1px solid white;
     border-radius: 10px;
     margin-inline: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tentang-box .box.box:nth-child(1) img:hover {
+    transform: scale(1.05);
 }
 
 .tentang-box .box:nth-child(1) p {
@@ -125,23 +136,27 @@ header svg {
 }
 
 .tentang-box .box:nth-child(1) a {
+    display: inline-block;
     border: 1px solid white;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .tentang-box .box:nth-child(1) a:hover {
     background-color: white;
     color: #667392;
     font-weight: bold;
+    transform: scale(1.1);
 }
 
 .tentang-box .tools {
     display: grid;
-    grid-template-columns: repeat (auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
+    margin-top: 30px;
 }
 
 .tentang-box .tools .tools-box {
@@ -151,11 +166,13 @@ header svg {
     border: 1px solid white;
     padding: 10px;
     border-radius: 5px;
+    background-color: white;
+    color: #667392;
+    transition: transform 0.3s ease-in-out;
 }
 
 .tentang-box .tools .tools-box:hover {
-    background-color: white;
-    color: #667392;
+    transform: scale(0.95);
 }
 
 .tentang-box .tools .tools-box img {
