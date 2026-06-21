@@ -35,9 +35,17 @@
 }
 
 .navbar-box .menu li a {
+    display:inline-block ;
     text-decoration: none;
     color: black;
+    transition: transform 0.3s ease-in-out;
 }
+
+.navbar-box .menu li a:hover {
+    color: #667392;
+    transform: scale(1.3);
+}
+
 /* Navbar */
 
 /* Hero */
@@ -245,8 +253,8 @@ header svg {
 
 .project-box .project-desc .project-btn a:hover{
     transform: scale(0.95);
-
 }
+
 /* Project */
 
 /* Contact */
@@ -263,6 +271,13 @@ footer{
 
 footer span{
     font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer span:hover{
+    display: inline-block;
+    font-weight: bold;
+    transform: scale(0.95);
 }
 
 footer .social{
@@ -270,12 +285,18 @@ footer .social{
     gap: 20px;
 }
 
-footer .social a{
+footer .social a {
+    display: inline-block;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
+    transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 768px){
+footer .social a:hover{
+    transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
     footer{
         flex-direction: column-reverse;
         gap: 20px; 
